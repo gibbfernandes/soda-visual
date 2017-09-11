@@ -1,0 +1,36 @@
+.page-section {
+	padding: 1.2rem 0;
+  
+	@mixin atLarge {
+    padding: 5rem 0;
+	}
+  
+  &--about {
+    @mixin atSmall {
+      padding-bottom: 90px;
+    }
+  }
+  
+  &--our-clients {
+    /* temp color */
+    background-color: #6e7279;
+    
+    @mixin atMedium {
+      background: url('../../assets/images/clients_bg.jpg') top center no-repeat;
+      background-attachment: fixed;
+			background-size: cover;
+      
+      
+    }
+    
+    @mixin atLarge {
+      padding-bottom: 94px;
+    }
+  }
+  
+  &--contact {
+    @mixin atLarge {
+      padding: 90px 0 60px 0;
+    }
+  }
+}

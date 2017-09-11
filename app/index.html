@@ -6,61 +6,159 @@
     <title>Soda Visual</title>
     <meta name="keywords" content="Commercial photography, photgraph price bundles, photograph packages, affordable photography">
     <meta name="description" content="Soda Visual is an agency with years of experience in Creative Commercial Photography.">
+    
+    <link rel="stylesheet" href="temp/styles/styles.css">
   </head>
   <body>
-    <header>
-      <div>
-        <img src="assets/images/icons/facebook.png">
-        <img src="assets/images/icons/twitter.png">
-        <img src="assets/images/icons/instagram.png">
+    <header class="site-header">
+      <div class="wrapper wrapper--header-fluid">
+        <img class="site-header__icon site-header__icon--facebook" src="assets/images/icons/facebook.png">
+        <img class="site-header__icon site-header__icon--twitter" src="assets/images/icons/twitter.png">
+        <img class="site-header__icon site-header__icon--instagram" src="assets/images/icons/instagram.png">
       </div>
     </header>
     
-    <div>
-      <img src="assets/images/header_bg.jpg">
-      <img src="assets/images/logo_soda.png">
-      <h1>PUSHING BOUNDARIES, REALISING IDEAS.</h1>
+    <div class="large-hero">
+      <picture>
+        <source srcset="assets/images/header_bg.jpg" media="(min-width: 1025px)">
+        <source srcset="assets/images/header_bg--small.jpg" media="(min-width: 790px)">
+        <img src="assets/images/header_bg--smaller.jpg" alt="backgroundimage" class="large-hero__image"> 
+      </picture>
+      
+      <div class="large-hero__content">
+        <div class="wrapper">
+          <div class="large-hero__logo">
+            <img src="assets/images/logo_soda.png" class="large-hero__logo-graphic">
+          </div>
+          <h2 class="headline headline--banner-heading">PUSHING BOUNDARIES, REALISING IDEAS.</h2>
+        </div>
+      </div>
     </div>
     
-    <div>
-      <p>A LITTLE BIT ABOUT OUR COMPANY</p>
-      
-      <p>Paul & Romain are 2 professional phtographers who work alongside you and your team to help you create and launch new products and strengthen your brand.</p>
-      <p>We help clients bring oncept and ideas to life with stills and video work and lots of other cool stuff. We try and bring a little bit of our personalities ito ver job we do, and we think that`s what makes us a little diffrent.</p>
-      <p>We try not to bark orders, but know when to ste in, and the open collaborative approach we bring to each job ensures we meet the</p>
+    <div class="page-section page-section--about">
+      <div class="wrapper">
+        <div class="row row--gutters">
+          <div class="row__large-3 row__large-3--large">
+            <h3 class="headline headline--about">A LITTLE BIT ABOUT OUR COMPANY</h3>
+          </div>
+          
+          <div class="row__large-9 row__large-9--small">
+            <div class="generic-content-container">
+              <p>SODA Visual is an agency with years of experience in Creative Commercial Photography. Whether you're creating a campaign from scratch or want to give your existing campaign an extra creative touch, we have the tools and the skills to make things happen.</p>
+              <p>Paul & Romain are 2 professional phtographers who work alongside you and your team to help you create and launch new products and strengthen your brand.</p>
+              <p>We help clients bring oncept and ideas to life with stills and video work and lots of other cool stuff. We try and bring a little bit of our personalities ito ver job we do, and we think that`s what makes us a little diffrent.</p>
+              <p>We try not to bark orders, but know when to ste in, and the open collaborative approach we bring to each job ensures we meet the</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <div>
-      <h2>OUR CLIENTS</h2>
-      
-      <img src="assets/images/logo_grand.png">
-      <img src="assets/images/logo_kings.png">
-      <img src="assets/images/logo_peldonrose.png">
-      <img src="assets/images/logo_studio.png">
-      <img src="assets/images/logo_barclays.png">
-      <img src="assets/images/logo_ministry.png">
-      <img src="assets/images/logo_freeview.png">
-      <img src="assets/images/logo_sony.png">
+    <div class="page-section page-section--our-clients">
+      <div class="wrapper">
+        <h2 class="headline headline--our-clients">OUR CLIENTS</h2>
+        
+        <div class="row row--our-clients">
+          <div class="row__medium-3 row__small-6">
+            <div class="our-clients">
+              <a href="#">
+                <img class="our-clients__image" src="assets/images/logo_grand.png" />
+              </a>
+            </div>
+          </div>
+          <div class="row__medium-3 row__small-6">
+            <div class="our-clients">
+              <a href="#">
+                <img class="our-clients__image" src="assets/images/logo_kings.png" />
+              </a>
+            </div>
+          </div>
+          <div class="row__medium-3 row__small-6">
+            <div class="our-clients">
+              <a href="#">
+                <img class="our-clients__image" src="assets/images/logo_peldonrose.png" />
+              </a>
+            </div>
+          </div>
+          <div class="row__medium-3 row__small-6">
+            <div class="our-clients">
+              <a href="#">
+                <img class="our-clients__image" src="assets/images/logo_studio.png" />
+              </a>
+            </div>
+          </div>
+          <div class="row__medium-3 row__small-6">
+            <div class="our-clients">
+              <a href="#">
+                <img class="our-clients__image" src="assets/images/logo_barclays.png" />
+              </a>
+            </div>
+          </div>
+          <div class="row__medium-3 row__small-6">
+            <div class="our-clients">
+              <a href="#">
+                <img class="our-clients__image" src="assets/images/logo_ministry.png" />
+              </a>
+            </div>
+          </div>
+          <div class="row__medium-3 row__small-6">
+            <div class="our-clients">
+              <a href="#">
+                <img class="our-clients__image" src="assets/images/logo_freeview.png" />
+              </a>
+            </div>
+          </div>
+          <div class="row__medium-3 row__small-6">
+            <div class="our-clients our-clients--no-margin">
+              <a href="#">
+                <img class="our-clients__image" src="assets/images/logo_sony.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <div>
-      <h2>CONTACT SODA VISUAL</h2>
-      
-      <p>SODA Visual is an agency with years of expierence in Creative Commercial Phtography. Whther you`re creating a campaign from scratch or want to give your existing campaign.</p>
-      <p>PAUL:+44(0)794 921 2037</p>
-      <p>ROMAIN:+44(0)794 921 2037</p>
-      <p>EMAIL:info@soda-visual.com</p>
-      
-      <form>
-        <input type="text" placeholder="EMAIL ADDRESS">
-        <input type="text" placeholder="Name">
-        <textarea  rows="5" placeholder="MESSAGE"></textarea>
-        <button type="submit">SUBMIT</button>
-      </form>
+    <div class="page-section page-section--contact">
+      <div class="wrapper">
+        <div class="row">
+        
+          <div class="row__large-8">
+            <h2 class="headline headline--contact">CONTACT SODA VISUAL</h2>
+            
+            <div class="generic-content-container generic-content-container--contact">
+              <p class="contact-p">Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+              <p class="contact-p">PAUL:+44(0)794 921 2037</p>
+              <p class="contact-p">ROMAIN:+44(0)794 921 2037</p>
+              <p class="contact-p">EMAIL:info@soda-visual.com</p>
+            </div>
+          </div>
+          
+          <div class="row__large-4">
+            <form class="form-layout">
+              <div class="form-layout__tooltip-container">
+                <input name="email" class="form-layout--text" type="text" placeholder="EMAIL ADDRESS">
+              </div>
+              <div class="form-layout__tooltip-container">
+                <input name="fullname"class="form-layout--text" type="text" placeholder="NAME">
+              </div>
+              <div class="form-layout__tooltip-container">
+                <textarea name="message" class="form-layout--text form-layout--textarea" rows="5" placeholder="MESSAGE"></textarea>
+              </div>
+              <button class="form-layout--text form-layout--button" type="submit">SUBMIT</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
     </div>
     
-    <footer>
-      <p>Copyright Soda Visual&copy; 2015 <a href="#">Terms & Conditions</a></p>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p class="site-footer__content">Copyright Soda Visual&copy; 2015<span class="site-footer__link"><a href="#">Terms & Conditions</a></span></p>
+      </div>
     </footer>
+    
+    <script src="/temp/scripts/App.js"></script>
   </body>
 </html>

@@ -1,0 +1,81 @@
+.form-layout {
+  padding-top: 20px;
+  
+  &__tooltip-container {
+    position: relative;
+    
+    
+    & label {
+      position: absolute;
+      padding: 5px;
+      font-family: Avenir-Light;
+      font-size: 16px;
+      z-index: 1;
+      bottom: -35px;
+      right: 0;
+      border-radius: 6px;
+      background-color: #fff;
+      color: black;
+      text-align: center;
+      border: 1px solid rgba($mainBlue, 0.5);
+      box-shadow: 2px 2px 2px $shadow;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 42%;
+        left: 0;
+        margin-left: 10px;
+        margin-top: -22px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent rgba(136,136,136, 0.82) transparent;
+      }
+    }
+  }
+  
+  /* test */
+  
+  &--text {
+    display: block;
+    white-space:nowrap;
+    width:100%;
+    background:#f2f3f3;
+    border-bottom:4px solid #c9d7e3;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-bottom:17px;
+    font-family: Avenir-Light;
+    font-weight:200;
+    font-size:16px;
+    line-height: 34px;
+    letter-spacing: 0;
+    padding:18px 13px 18px 13px;
+
+    &:focus {
+      border-color: $mainBlueHover;
+    }
+  }
+  
+  &--textarea {
+    resize: none;
+    height: 150px;
+    display: block;
+  }
+  
+  &--button {
+    background-color: $mainBlue;
+    border:none;
+    padding:20px 0 18px 0;
+    text-align:center;
+    font-family:inherit;
+    font-weight:bold;
+    color:white;
+    cursor: pointer;
+    
+    &:hover {
+    background-color: $mainBlueHover;
+    }
+  }
+}

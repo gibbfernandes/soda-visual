@@ -1,0 +1,23 @@
+.site-footer {
+  background-color: #000;
+  padding: 36px 0 32px 0;
+  color: #FFF;
+  font-family: Avenir-Roman;
+  font-size: 14px;
+  line-height: 12.21px;
+  letter-spacing: .02em;
+  
+  &__content {
+    margin:2px 0;
+    @mixin clearfix;
+  }
+  
+  &__link {
+    float: right;
+    
+    & a {
+      text-decoration: none;
+      color: #FFF;
+    }
+  }
+}

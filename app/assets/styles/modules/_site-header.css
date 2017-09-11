@@ -1,0 +1,29 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding-top: 20px;
+  text-align: center;
+  
+  @mixin atMedium {
+    text-align: left;
+  }
+  
+  &__icon {
+    width: 40px;
+    border-radius: 20px;
+    
+    &--facebook {
+      background-color: #37589B;
+    }
+    
+    &--twitter {
+      background-color: #46D4FE;
+    }
+    
+    &--instagram {
+      background-color: #fb3958;
+    }
+  }
+}

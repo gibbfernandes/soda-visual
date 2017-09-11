@@ -1,0 +1,65 @@
+@font-face {
+    font-family:"Open Sans";
+    font-weight:normal;
+    font-style:normal;
+    src: url("../../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family:"Open Sans";
+    font-weight:bold;
+    font-style:normal;
+    src: url("../../assets/fonts/OpenSans-Bold.ttf");
+}
+
+
+@font-face {
+    font-family:"Avenir";
+    font-weight:normal;
+    font-style:normal;
+    src: url("../../assets/fonts/Avenir.otf") format("opentype");
+}
+
+@font-face {
+    font-family:"Avenir-Light";
+    font-weight:200;
+    font-style:normal;
+    src: url("../../assets/fonts/Avenir-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family:"Avenir";
+    font-weight:600;
+    font-style:normal;
+    src: url("../../assets/fonts/Avenir-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family:"Avenir";
+    font-weight:700;
+    font-style:normal;
+    src: url("../../assets/fonts/Avenir-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family:"Avenir-Roman";
+    font-style:normal;
+    font-weight:normal;
+    src: url("../../assets/fonts/Avenir-Roman.otf") format("opentype");
+}
+
+body {
+  font-family: "Avenir";
+  font-size: 22px;
+  font-weight: lighter;
+  color: #1e2f3e;
+}
+
+img {
+  max-width: 100%;
+  height: auto;  
+}
+
+* {
+	box-sizing: border-box;
+}
