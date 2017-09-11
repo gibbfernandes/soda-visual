@@ -1,40 +1,33 @@
 .large-hero {
   position: relative;
-  
+
   &__image {
 		display: block;
 		width: 100%;
 	}
-  
+
   &__logo {
-    /*transform-origin: 50% 0;
-    transform: scale(.8);*/
     padding-top: 70px;
-    /*margin-bottom: -50px;
-    display: block;*/
-    /*margin-right: auto;
-    margin-left: auto;*/
-    
+
     @mixin atSmall {
       padding-top: 0;
       padding-bottom: 40px;
-      transform: scale(1);
     }
-    
+
     &-graphic {
       display: block;
       margin-left: auto;
       margin-right: auto;
       transform: scale(.9);
       transform-origin: 50% 100%;
-      
+
       @mixin atSmall {
         transform: scale(1);
       }
     }
-    
+
   }
-  
+
   &__content {
     position: absolute;
     top: 50%;
