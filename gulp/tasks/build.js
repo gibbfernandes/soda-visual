@@ -37,6 +37,11 @@ gulp.task('fontFolder', ['deleteDistFolder'], function() {
     .pipe(gulp.dest("./docs/assets/fonts/"));
 });
 
+gulp.task('faFolder', ['deleteDistFolder'], function() {
+  return gulp.src("./app/assets/fa/**/*")
+    .pipe(gulp.dest("./docs/assets/fa/"));
+});
+
 gulp.task('useminTrigger', ['deleteDistFolder'], function() {
   gulp.start("usemin");
 });
@@ -50,4 +55,4 @@ gulp.task('usemin',['styles', 'scripts'], function() {
     .pipe(gulp.dest("./docs"));
 });
 
-gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'fontFolder', 'useminTrigger']);
+gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'fontFolder', 'faFolder', 'useminTrigger']);
