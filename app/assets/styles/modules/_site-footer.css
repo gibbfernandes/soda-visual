@@ -6,18 +6,26 @@
   font-size: 14px;
   line-height: 12.21px;
   letter-spacing: .02em;
-  
-  &__content {
-    margin:2px 0;
-    @mixin clearfix;
+
+  &__copyright {
+    display: block;
+    text-align: center;
+    margin: 3px 0;
+
+    @mixin atSmall {
+      text-align: left;
+    }
   }
-  
-  &__link {
-    float: right;
-    
-    & a {
-      text-decoration: none;
-      color: #FFF;
+
+  &__terms-condition {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    margin: 3px 0;
+
+    @mixin atSmall {
+      padding-top: 0;
+      text-align: right;
     }
   }
 }

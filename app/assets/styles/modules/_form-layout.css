@@ -1,10 +1,10 @@
 .form-layout {
   padding-top: 20px;
-  
+
   &__tooltip-container {
     position: relative;
-    
-    
+
+
     & label {
       position: absolute;
       padding: 5px;
@@ -19,7 +19,7 @@
       text-align: center;
       border: 1px solid rgba($mainBlue, 0.5);
       box-shadow: 2px 2px 2px $shadow;
-      
+
       &::after {
         content: "";
         position: absolute;
@@ -33,9 +33,9 @@
       }
     }
   }
-  
+
   /* test */
-  
+
   &--text {
     display: block;
     white-space:nowrap;
@@ -57,13 +57,13 @@
       border-color: $mainBlueHover;
     }
   }
-  
+
   &--textarea {
     resize: none;
     height: 150px;
     display: block;
   }
-  
+
   &--button {
     background-color: $mainBlue;
     border:none;
@@ -73,7 +73,7 @@
     font-weight:bold;
     color:white;
     cursor: pointer;
-    
+
     &:hover {
     background-color: $mainBlueHover;
     }
