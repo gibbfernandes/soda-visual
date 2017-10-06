@@ -1,26 +1,31 @@
 .our-clients {
-  background-color: $ourClientsBackground;
   margin: 0 0 6px 0;
-  
+
   @mixin atSmall {
     margin: 6px;
   }
-  
+
   &--no-margin {
-    
+
     @mixin atSmaller {
       margin: 0;
     }
   }
-  
-  a:hover {
-    display: block;
-    background-color: $mainBlue;
-    transition: all .2s ease-out;
-  }
-  
+
   &__image {
     display: block;
-    width: 100%;
+    width: 244px;
+    margin: 0 auto;
+    background-color: $ourClientsBackground;
+
+    @mixin atSmall {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__image:hover {
+    background-color: $mainBlue;
+    transition: all .2s ease-out;
   }
 }
